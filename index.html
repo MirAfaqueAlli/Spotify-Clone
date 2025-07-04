@@ -1,185 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="./assets/logo.png">
     <link rel="stylesheet" href="style.css">
     <title>Spotify - Web Player: Music for everyone</title>
 </head>
+
 <body>
-    <div class="main"> 
+    <div class="main">
         <div class="sidebar">
             <div class="nav">
                 <div class="nav-option" style="opacity: 1;">
                     <i class="fa-solid fa-house"></i>
                     <a href="#">Home</a>
-                    </div>
+                </div>
                 <div class="nav-option">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <a href="#">Search</a>
                 </div>
-            
+
             </div>
             <div class="library">
                 <div class="option">
                     <div class="lib-option nav-option">
-                    <img src="./assets/library_icon.png" alt="">
-                    <a href="#">Your Library</a>
-                </div>
-                <div class="icons">
-                    <i class="fa-solid fa-plus"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
+                        <img src="./assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
                 <div class="lib-box">
                     <div class="box">
-                    <p class="box-p1">create your first playlist</p>
-                    <p class="box-p2">It's easy, we'll help you</p>
-                    <button class="badge">Create playlist</button>
-                </div>
+                        <p class="box-p1">create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
                     <div class="box">
-                    <p class="box-p1">Let's find some podcasts to follow</p>
-                    <p class="box-p2">We'll keep you updated on new episodes</p>
-                    <button class="badge">Browse podcast</button>
-                </div>
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcast</button>
+                    </div>
                 </div>
             </div>
-        
+
         </div>
         <div class="main-content">
             <div class="sticky-nav">
                 <div class="nav-icons">
                     <img src="./assets/backward_icon.png" alt="">
-                <img  class="hide" src="./assets/forward_icon.png" alt="">
+                    <img class="hide" src="./assets/forward_icon.png" alt="">
                 </div>
                 <div class="nav-options">
                     <button class="badge nav-item hide">Explore Premium</button>
-                <button class="badge dark-badge nav-item">
-                    <i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>
-                    Install App</button>
+                    <button class="badge dark-badge nav-item">
+                        <i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>
+                        Install App</button>
                     <i class="fa-regular fa-user nav-item user-icon"></i>
                 </div>
             </div>
             <!-- <div class="cards"> -->
-                <h2>Recently played</h2>
-                <div class="cards-container">
-                    <div class="card">
-                        <img class="card-img"  src="./assets/card13img.jpeg" alt="">
-                        <p class="card-title">Chikitu (From "Coolie")</p>
-                        <p class="card-info">Anirudh Ravichander, T.Rajendar, Arivu</p>
-                    </div>
-                    <div class="card">
-                        <img class="card-img"  src="./assets/card14img.jpeg" alt="">
-                        <p class="card-title">Besos</p>
-                        <p class="card-info">Shreya Ghosal, Rajat Nagpal, Karl Wine</p>
-                    </div>
-                    <div class="card">
-                        <img class="card-img"  src="./assets/card15img.jpeg" alt="">
-                        <p class="card-title">Baby Girl</p>
-                        <p class="card-info">Guru Randhawa, Dhvani Bhanushali</p>
-                    </div>
-                    <div class="card">
-                        <img class="card-img"  src="./assets/card12img.jpeg" alt="">
-                        <p class="card-title">Dagabaaz Re</p>
-                        <p class="card-info">Rahat Fateh Ali Khan, Shreya Ghosal</p>
-                    </div>
-                    <div class="card">
-                        <img class="card-img"  src="./assets/card16img.jpeg" alt="">
-                        <p class="card-title">Dil Ke Taj Mahal Mein (From Badass Ravi Kumar)</p>
-                        <p class="card-info">Himesh Reshammiya</p>
-                    </div>
+            <h2>Recently played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img class="card-img" src="./assets/card13img.jpeg" alt="">
+                    <p class="card-title">Chikitu (From "Coolie")</p>
+                    <p class="card-info">Anirudh Ravichander, T.Rajendar, Arivu</p>
                 </div>
-                <h2>Trending now near you</h2>
-                <div class="cards-container">
-                    <div class="card">
-                        <img class="card-img"  src="./assets/card2img.jpeg" alt="">
-                        <p class="card-title">Mahiye Jinna Sohna</p>
-                        <p class="card-info">Darshan Raval</p>
-                    </div>
-                     <div class="card">
-                        <img class="card-img"  src="./assets/card3img.jpeg" alt="">
-                        <p class="card-title">Mere Paas Tum Ho (Original Motion Picture Soundtrack)</p>
-                        <p class="card-info">Rahat Fateh Ali Khan</p>
-                    </div>
-                     <div class="card">
-                        <img class="card-img"  src="./assets/card4img.jpeg" alt="">
-                        <p class="card-title">Naa Ready (From "Leo")</p>
-                        <p class="card-info">Thalapathy Vijay, Anirudh Ravichander</p>
-                    </div>
-                     <div class="card">
-                        <img class="card-img"  src="./assets/card7img.webp" alt="">
-                        <p class="card-title">Terre Pyaar Mein (From "Suroor 2021")</p>
-                        <p class="card-info">Himesh Reshammiya</p>
-                    </div>
-                     <div class="card">
-                        <img class="card-img"  src="./assets/card8img.jpeg" alt="">
-                        <p class="card-title">Peeling (From "Pushpa 2: The Rule")</p>
-                        <p class="card-info">Sankarr Babu, Laxmi Dasa, DSP</p>
-                    </div>
-                     <div class="card">
-                        <img class="card-img"  src="./assets/card9img.jpeg" alt="">
-                        <p class="card-title">Sapphire</p>
-                        <p class="card-info">Ed Sheeran</p>
-                    </div>
-                     <div class="card">
-                        <img class="card-img"  src="./assets/card10img.jpeg" alt="">
-                        <p class="card-title">Aasa Kooda (From "Think Indie")</p>
-                        <p class="card-info">Sai Abhyankkar, Sai Smriti</p>
-                    </div>
-                     <div class="card">
-                        <img class="card-img"  src="./assets/card11img.jpeg" alt="">
-                        <p class="card-title">Chaleya (From "Jawan")</p>
-                        <p class="card-info">Anirudh Ravichander, Arijit Singh</p>
-                    </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card14img.jpeg" alt="">
+                    <p class="card-title">Besos</p>
+                    <p class="card-info">Shreya Ghosal, Rajat Nagpal, Karl Wine</p>
                 </div>
-                <h2>Featured Charts</h2>
-                <div class="cards-container">
-                    <div class="card">
-                        <img class="card-img"  src="./assets/card5img.jpeg" alt="">
-                        <p class="card-title">Top 50 -  Global</p>
-                        <p class="card-info">Your daily updates of the most played tracks</p>
-                    </div>
-                    <div class="card">
-                        <img class="card-img"  src="./assets/card6img.jpeg" alt="">
-                        <p class="card-title">Top Songs - India</p>
-                        <p class="card-info">Your daily updates of the most played tracks</p>
-                    </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card15img.jpeg" alt="">
+                    <p class="card-title">Baby Girl</p>
+                    <p class="card-info">Guru Randhawa, Dhvani Bhanushali</p>
                 </div>
-                <div class="footer">
-                    <div class="line"></div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card12img.jpeg" alt="">
+                    <p class="card-title">Dagabaaz Re</p>
+                    <p class="card-info">Rahat Fateh Ali Khan, Shreya Ghosal</p>
                 </div>
-                
-                
+                <div class="card">
+                    <img class="card-img" src="./assets/card16img.jpeg" alt="">
+                    <p class="card-title">Dil Ke Taj Mahal Mein (From Badass Ravi Kumar)</p>
+                    <p class="card-info">Himesh Reshammiya</p>
+                </div>
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img class="card-img" src="./assets/card2img.jpeg" alt="">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card3img.jpeg" alt="">
+                    <p class="card-title">Mere Paas Tum Ho (Original Motion Picture Soundtrack)</p>
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card4img.jpeg" alt="">
+                    <p class="card-title">Naa Ready (From "Leo")</p>
+                    <p class="card-info">Thalapathy Vijay, Anirudh Ravichander</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card7img.webp" alt="">
+                    <p class="card-title">Terre Pyaar Mein (From "Suroor 2021")</p>
+                    <p class="card-info">Himesh Reshammiya</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card8img.jpeg" alt="">
+                    <p class="card-title">Peeling (From "Pushpa 2: The Rule")</p>
+                    <p class="card-info">Sankarr Babu, Laxmi Dasa, DSP</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card9img.jpeg" alt="">
+                    <p class="card-title">Sapphire</p>
+                    <p class="card-info">Ed Sheeran</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card10img.jpeg" alt="">
+                    <p class="card-title">Aasa Kooda (From "Think Indie")</p>
+                    <p class="card-info">Sai Abhyankkar, Sai Smriti</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card11img.jpeg" alt="">
+                    <p class="card-title">Chaleya (From "Jawan")</p>
+                    <p class="card-info">Anirudh Ravichander, Arijit Singh</p>
+                </div>
+            </div>
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img class="card-img" src="./assets/card5img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card6img.jpeg" alt="">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+
             <!-- </div> -->
         </div>
         <div class="music-player">
             <div class="album">
-                
+
                 <div class="album-image">
                     <img src="./assets/cover.jpeg" alt="" class="album-cover">
                 </div>
-               <div class="music-title">
-                 <p class="main-head">Vaathi Coming</p>
-                <p class="sec-head">Anirudh Ravichander</p>
-               </div>
+                <div class="music-title">
+                    <p class="main-head">Vaathi Coming</p>
+                    <p class="sec-head">Anirudh Ravichander</p>
+                </div>
 
                 <div class="player-icons">
                     <i class="fa-regular fa-heart myheart"></i>
-                <div class="miniplayer-image">
-                    <img src="./assets/miniplayer1.png" alt="" class="miniplayer">
-                </div>
+                    <div class="miniplayer-image">
+                        <img src="./assets/miniplayer1.png" alt="" class="miniplayer">
+                    </div>
                 </div>
             </div>
             <div class="player">
                 <div class="player-controls">
                     <img src="./assets/player_icon1.png" alt="" class="player-control-icon">
                     <img src="./assets/player_icon2.png" alt="" class="player-control-icon">
-                    <img src="./assets/player_icon3.png" alt="" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon3.png" alt="" class="player-control-icon"
+                        style="opacity: 1; height: 2rem;">
                     <img src="./assets/player_icon4.png" alt="" class="player-control-icon">
                     <img src="./assets/player_icon5.png" alt="" class="player-control-icon">
                 </div>
@@ -201,10 +207,11 @@
                     <img src="./assets/speaker.png" alt="" class="speaker-option-image">
                 </div>
                 <i class="fa-solid fa-volume-low volume-option"></i>
-                <input type="range"  min="0" max="100" step="1" class="volume-range">
+                <input type="range" min="0" max="100" step="1" class="volume-range">
             </div>
 
         </div>
     </div>
 </body>
+
 </html>
